@@ -15,6 +15,7 @@ logs/*
 tmp/*
 data/*
 static/*
+config/*
 configuration*.txt�# vim, mac os
 *.sw*
 .DS_Store
