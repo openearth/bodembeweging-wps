@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# excluded credentials
+credentials*.txt
+connection*.txt
+config*.txt
+
+*.pyc
+outputs/*
+logs/*
+tmp/*
+data/*
+static/*
+configuration*.txt # vim, mac os
+*.sw*
+.DS_Store
+.*.un~
+.idea # python setup.py build/install artifacts
+build
+dist
+pywps_demo.egg-info/ # docs build artifacts
+_build/ 
+logs/pywps.log
