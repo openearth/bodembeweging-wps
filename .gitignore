@@ -7,6 +7,7 @@ __pycache__/
 credentials*.txt
 connection*.txt
 config*.txt
+*encrypted*.txt
 
 *.pyc
 outputs/*
@@ -14,13 +15,13 @@ logs/*
 tmp/*
 data/*
 static/*
-configuration*.txt # vim, mac os
+configuration*.txtï¿½# vim, mac os
 *.sw*
 .DS_Store
 .*.un~
-.idea # python setup.py build/install artifacts
+.ideaï¿½# python setup.py build/install artifacts
 build
 dist
-pywps_demo.egg-info/ # docs build artifacts
-_build/ 
+pywps_demo.egg-info/ï¿½# docs build artifacts
+_build/ï¿½
 logs/pywps.log
