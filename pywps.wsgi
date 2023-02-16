@@ -42,26 +42,11 @@ pywps.inout.basic.OGCUNIT["linestring"] = "urn:ogc:def:uom:OGC:1.0:point"
 pywps.inout.basic.OGCUNIT["Bbox"] = "urn:ogc:def:uom:OGC:1.0:point"
 
 from pywps.app.Service import Service
-from processes.mepduinen_wps import KustTransect, Kust3dplot, GwTimeseries, Kust2danimation
-
-from processes.ultimate_question import UltimateQuestion
-from processes.wps_endure import ENDURESlrEffects, ENDUREShorelineTransect
-from processes.common.info_nhiflux import info_nhiflux
-from processes.common.info_regis import info_regis
-from processes.common.info_geotop import info_geotop 
 from processes.wps_bodem_boreholes import BodemBoreholePlots
 from processes.wps_bodem_timeseries import BodemTimeseriesPlots
 
-from processes.wps_ra2ce_calc_ratio import WpsRa2ceRatio
-from processes.wps_ra2ce_provide_hazard_list import WpsRa2ceProvideHazardList
-
-
-from processes.wps_nutrientenmaas import NutrientenmaasKRWtseries, NutrientenmaasAVGtseries, NutrientenmaasDoelgattseries, NutrientenmaasMNLSOtseries, NutrientenmaasNitraatapp, NutrientenmaasPiechart#, info_nhiflux, info_regis
-
 processes = [
-        NutrientenmaasKRWtseries(), NutrientenmaasAVGtseries(), NutrientenmaasDoelgattseries(), NutrientenmaasMNLSOtseries(), NutrientenmaasNitraatapp(), NutrientenmaasPiechart(), info_nhiflux(), info_regis(),
-        KustTransect(), Kust3dplot(), GwTimeseries(), Kust2danimation(),
-        UltimateQuestion(), ENDURESlrEffects(), ENDUREShorelineTransect(), info_geotop(), BodemBoreholePlots(), BodemTimeseriesPlots(), WpsRa2ceProvideHazardList(), WpsRa2ceRatio() 
+         BodemBoreholePlots(), BodemTimeseriesPlots() 
         ]
 
 # Description used in template
