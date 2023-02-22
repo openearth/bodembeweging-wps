@@ -189,6 +189,7 @@ def getcl_ts(plot_dir,begin_date, end_date, location, cfile, parameter):
     p.line(x='x', y='y', source = source, line_dash= 'dotted', line_width=2.5)
     
     out_file = os.path.join(plot_dir, 'plot_{}.html'.format(int(time.time())))
+    print('plotfile',out_file)
     output_file(out_file)
     save(p)
     return out_file
