@@ -78,6 +78,10 @@ class BodemBoreholePlots(Process):
             locid = request.inputs["locationid"][0].data.split(' ')[0]            
            
             #db connection params
+            if os.path.exists('../config/bodembeweging.txt'):
+                print('pad naar configfile gevonden')
+            else:
+                print('misschien toch beter een ander pad gebruiken')
             db_config = os.path.join(dirname,'../config/bodembeweging.txt')
             PLOTS_DIR, APACHE_DIR = readConfig()
                        
