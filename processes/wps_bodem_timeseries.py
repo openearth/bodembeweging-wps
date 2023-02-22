@@ -87,7 +87,7 @@ class BodemTimeseriesPlots(Process):
             if not os.path.isdir(PLOTS_DIR):
                 os.makedirs(PLOTS_DIR)
                 
-            db_config = os.path.join(dirname,'../config/bodembeweging.txt')
+            db_config = os.path.join(dirname,'./opt/pywps/config/bodembeweging.txt')
             location = loc[0],loc[1]
             begin_date = '1900-01-01'
             end_date = '2020-06-01'
