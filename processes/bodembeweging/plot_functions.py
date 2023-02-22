@@ -169,6 +169,7 @@ def plot_bore_log(locid,plot_dir,fn):
     # show(p)
     # - Output HTML
     out_file = os.path.join(plot_dir, 'plot_{}.html'.format(int(time.time())))
+    print('borehole html',out_file)
     output_file(out_file)
     save(p)
     return out_file
