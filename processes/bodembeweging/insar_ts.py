@@ -101,7 +101,7 @@ def getdata(pid, begin_date, end_date, cfile, parameter):
     conn = None
     try:
         # read connection parameters
-        print('cfile',cfile)
+        print('cfile getdata',cfile)
         params = postgis_config(cfile)
  
         # connect to the PostgreSQL server
@@ -143,6 +143,7 @@ def getcl_ts(plot_dir,begin_date, end_date, location, cfile, parameter):
         
         bear in mind location is in wgs84
     """
+    print('cfile getts',cfile)
     pf = ''
 
     pid,name = getlocationid(location,parameter,cfile)
