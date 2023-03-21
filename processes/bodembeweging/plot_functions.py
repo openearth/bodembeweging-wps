@@ -38,6 +38,7 @@ def postgis_config(fn, section='PostgreSQL'):
 def get_soil_data(locid,fn):
     """ Connect to the PostgreSQL database server """
     conn = None
+    print('read config to access PostgreSQL')
     try:
         # read connection parameters
         params = postgis_config(fn)
