@@ -101,6 +101,7 @@ def getdata(pid, begin_date, end_date, cfile, parameter):
     conn = None
     try:
         # read connection parameters
+        print('cfile',cfile)
         params = postgis_config(cfile)
  
         # connect to the PostgreSQL server
