@@ -80,7 +80,8 @@ class BodemTimeseriesPlots(Process):
             loc = request.inputs["location"][0].data.split(',')     
            
             #db connection params
-            PLOTS_DIR, APACHE_DIR = readConfig()
+            db_config = '/opt/pywps/config/bodembeweging.txt'
+            PLOTS_DIR, APACHE_DIR = readConfig(db_config)
             
             # plot_dir = os.path.join(dirname, r'../data/bodembeweging')
            
@@ -88,7 +89,7 @@ class BodemTimeseriesPlots(Process):
                 os.makedirs(PLOTS_DIR)
             
             #db_config = os.path.join(dirname,'./opt/pywps/config/bodembeweging.txt')
-            db_config = '/opt/pywps/config/bodembeweging.txt'
+            
             location = loc[0],loc[1]
             begin_date = '1900-01-01'
             end_date = '2020-06-01'
