@@ -78,13 +78,13 @@ class BodemBoreholePlots(Process):
             locid = request.inputs["locationid"][0].data.split(' ')[0]            
            
             #db connection params
-            cfile = '/opt/pywps/config/bodembeweging.txt'
+            cfile = './opt/pywps/config/bodembeweging.txt'
             if os.path.exists(cfile):
                 print('pad naar configfile gevonden')
             else:
                 print('misschien toch beter een ander pad gebruiken')
             db_config = cfile
-            PLOTS_DIR, APACHE_DIR = readConfig()
+            PLOTS_DIR, APACHE_DIR = readConfig(db_config)
                        
             if not os.path.isdir(PLOTS_DIR):
                 os.makedirs(PLOTS_DIR)

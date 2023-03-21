@@ -17,12 +17,12 @@ dir_path = dirname(realpath(__file__))
 
 
 # Read default configuration from file
-def readConfig():
+def readConfig(cfile):
     # Default config file (relative path)
-    cfile=os.path.join(os.path.dirname(os.path.realpath(__file__)), './opt/pywps/config/bodembeweging.txt')
-    cfile='./opt/pywps/config/bodembeweging.txt'
+    print('configfile',cfile)
     cf = configparser.RawConfigParser()
     cf.read(cfile)
+    print('plots_dir',cf.get('Bokeh', 'plots_dir'))
     plots_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), cf.get('Bokeh', 'plots_dir')) # gives the absolute path of the plots dir
     apache_dir = cf.get('Bokeh', 'apache_dir')
     return plots_dir, apache_dir
