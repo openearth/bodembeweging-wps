@@ -27,7 +27,7 @@
 
 # $HeadURL: $
 # $Keywords: $
-# http://localhost:5000/wps?request=Execute&service=WPS&identifier=bodemtime_plots&version=1.0.0&datainputs=location=526132,6803355
+# http://localhost:5000/wps?request=Execute&service=WPS&identifier=bodemtime_plots&version=1.0.0&datainputs=location=4.705107650756759,52.01213959798264
 # PyWPS
 
 # http://localhost:5000/wps?request=GetCapabilities&service=WPS&version=1.0.0
